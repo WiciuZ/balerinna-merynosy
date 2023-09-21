@@ -1,0 +1,219 @@
+/* Resetowanie domyślnych stylów przeglądarek */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Przykładowe style dla tekstu */
+h1, h2 {
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Styl nagłówka */
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Styl nawigacji */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    width: 1850px;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styl sekcji */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+/* Styl stopki */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Styl obrazka merynosa w nagłówku */
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+a {
+    transition: color 0.5s ease;
+}
+
+/* Styl linków nawigacyjnych */
+nav a:hover {
+    color: #ff6600;
+}
+/* Rozmiar czcionki we wszystkich paragrafach <p> znajdujących się na stronie */
+section>p{
+    font-size: 18px;
+}
+/* Rozmiar czcionki we wszystkich znacznikach <strong> znajdujących się na stronie */
+section>strong{
+    font-size: 20px;
+}
+
+/* Styl dla kontenera galerii */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Odstęp między obrazkami */
+}
+
+/* Styl dla pojedynczego obrazu w galerii */
+.image-gallery img {
+    width: 300px; /* Szerokość obrazka */
+    height: auto;
+    border: 2px solid #ddd; /* Ramka wokół obrazka */
+    transition: transform 0.2s; /* Efekt transformacji po najechaniu myszą */
+}
+
+/* Styl dla obrazu po najechaniu myszą */
+.image-gallery img:hover {
+    transform: scale(1.1); /* Powiększenie obrazka po najechaniu myszą */
+}
+
+/* Stylizacja ogólna dla większych ekranów (desktop) */
+body {
+    font-size: 16px;
+}
+
+/* Stylizacja dla tabletów (np. iPad) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Dodatkowe style dla mniejszych ekranów */
+}
+
+/* Stylizacja dla małych ekranów (smartfony) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    /* Dodatkowe style dla bardzo małych ekranów */
+}
+
+/* Dodaj cień pod tekstem w nagłówkach */
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Dodaj cień pod tekstem w treści */
+p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Animacja obracającego się obrazka */
+img {
+    transition: transform 0.5s ease;
+}
+
+/* Obracaj obrazek o 45 stopni po najechaniu kursorem */
+img:hover {
+    transform: rotate(45deg);
+}
+
+/* Animacja migającego tekstu */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    animation: blink 10s infinite; /* Tekst będzie migający */
+}
+
+/* Dodaj gradientowe tło do nagłówka */
+header {
+    background: linear-gradient(to bottom, #e7e09d, #d090e4);
+    color: white; /* Biały kolor tekstu na tle gradientu */
+}
+
+/* Stylizacja linków w nawigacji */
+nav ul li a {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: #3366cc; /* Kolor linków */
+    transition: color 0.3s ease; /* Animacja zmiany koloru */
+}
+
+/* Zmiana koloru linków po najechaniu kursorem */
+nav ul li a:hover {
+    color: #ff6600; /* Nowy kolor */
+}
+
+body {
+    background-color: #f0f0f0; /* Jasny kolor tła */
+}
+
+header {
+    color: white; /* Biały kolor tekstu na tle gradientu */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-img {
+    width: 70%;
+    height: auto;
+}
